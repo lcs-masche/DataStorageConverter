@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var name: String = ""
-    private var greeting: String {
-        "Hello, \(name)!"
+/// - Mark: Stored properties
+    @State private var input: String = ""
+    private var output: String {
+        return "You typed in \(input)"
     }
+    
     var body: some View {
         
-        VStack {
-            
-            TextField("Enter your name", text: $name)
-                .padding(.horizontal)
-            Text(greeting)
-                .padding()
+        Form {
+            TextField("e.g.: 1892", text: $input)
+                .keyboardType(.numberPad)
+            Text(output)
         }
         
         
