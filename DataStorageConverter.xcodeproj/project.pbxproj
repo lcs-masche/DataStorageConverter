@@ -17,6 +17,8 @@
 		3DE7C9C925D6DF1C009AA287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE7C9C825D6DF1C009AA287 /* Preview Assets.xcassets */; };
 		3DE7C9D025D6DF97009AA287 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F007125D5B8010023C003 /* Enumerations.swift */; };
 		3DE7C9D325D6DF99009AA287 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F006E25D5B7E60023C003 /* Functions.swift */; };
+		3DE7CA2325D714B4009AA287 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7CA2225D714B4009AA287 /* File.swift */; };
+		3DE7CA2425D714B4009AA287 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7CA2225D714B4009AA287 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,8 @@
 		3DE7C9C525D6DF1C009AA287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE7C9C825D6DF1C009AA287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DE7C9CA25D6DF1C009AA287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE7C9DC25D6EED0009AA287 /* TimeConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE7CA2225D714B4009AA287 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DE7C9D925D6EED0009AA287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0E8F005725D5B5F00023C003 = {
 			isa = PBXGroup;
 			children = (
+				3DE7CA2225D714B4009AA287 /* File.swift */,
 				0E8F007125D5B8010023C003 /* Enumerations.swift */,
 				0E8F006B25D5B7860023C003 /* Extensions.swift */,
 				0E8F006E25D5B7E60023C003 /* Functions.swift */,
@@ -80,6 +92,7 @@
 			children = (
 				0E8F006025D5B5F00023C003 /* DataStorageConverter */,
 				3DE7C9BF25D6DF16009AA287 /* IOS-DataStorageConverter.app */,
+				3DE7C9DC25D6EED0009AA287 /* TimeConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +162,23 @@
 			productReference = 3DE7C9BF25D6DF16009AA287 /* IOS-DataStorageConverter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3DE7C9DB25D6EED0009AA287 /* TimeConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE7C9E825D6EED4009AA287 /* Build configuration list for PBXNativeTarget "TimeConverter" */;
+			buildPhases = (
+				3DE7C9D825D6EED0009AA287 /* Sources */,
+				3DE7C9D925D6EED0009AA287 /* Frameworks */,
+				3DE7C9DA25D6EED0009AA287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeConverter;
+			productName = TimeConverter;
+			productReference = 3DE7C9DC25D6EED0009AA287 /* TimeConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +192,9 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					3DE7C9BE25D6DF16009AA287 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					3DE7C9DB25D6EED0009AA287 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -181,6 +214,7 @@
 			targets = (
 				0E8F005F25D5B5F00023C003 /* DataStorageConverter */,
 				3DE7C9BE25D6DF16009AA287 /* IOS-DataStorageConverter */,
+				3DE7C9DB25D6EED0009AA287 /* TimeConverter */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +229,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DE7C9DA25D6EED0009AA287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -202,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE7CA2325D714B4009AA287 /* File.swift in Sources */,
 				0E8F006425D5B5F00023C003 /* main.swift in Sources */,
 				0E8F006C25D5B7860023C003 /* Extensions.swift in Sources */,
 				0E8F006F25D5B7E60023C003 /* Functions.swift in Sources */,
@@ -213,10 +255,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE7CA2425D714B4009AA287 /* File.swift in Sources */,
 				3DE7C9C425D6DF16009AA287 /* ContentView.swift in Sources */,
 				3DE7C9C225D6DF16009AA287 /* IOS_DataStorageConverterApp.swift in Sources */,
 				3DE7C9D025D6DF97009AA287 /* Enumerations.swift in Sources */,
 				3DE7C9D325D6DF99009AA287 /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7C9D825D6EED0009AA287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +457,53 @@
 			};
 			name = Release;
 		};
+		3DE7C9E925D6EED4009AA287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4X3Z79SBTY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.moritzasche.TimeConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DE7C9EA25D6EED4009AA287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4X3Z79SBTY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.moritzasche.TimeConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,6 +530,15 @@
 			buildConfigurations = (
 				3DE7C9CB25D6DF1C009AA287 /* Debug */,
 				3DE7C9CC25D6DF1C009AA287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE7C9E825D6EED4009AA287 /* Build configuration list for PBXNativeTarget "TimeConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE7C9E925D6EED4009AA287 /* Debug */,
+				3DE7C9EA25D6EED4009AA287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
